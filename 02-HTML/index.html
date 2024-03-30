@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Good Table</h3>
+    <table border="1">
+      <caption>
+        Student's Marksheet
+      </caption>
+      <thead>
+        <th>S. No</th>
+        <th>F. Name</th>
+        <th>L. Name</th>
+        <th>Marks</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td rowspan="2" colspan="2">Piyush</td>
+          <td>Garg</td>
+          <td>99</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Himanshu</td>
+          <td>Sengar</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Darshan</td>
+          <td>--</td>
+          <td>101</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Not A Good Table</h3>
+    <table border="1">
+      <!-- ROW 1 -->
+      <tr>
+        <td>1</td>
+        <td>Piyush</td>
+        <td>Garg</td>
+        <td>99</td>
+      </tr>
+
+      <!-- ROW 2 -->
+      <tr>
+        <td>2</td>
+        <td>Himanshu</td>
+        <td>Sengar</td>
+        <td>100</td>
+      </tr>
+
+      <!-- ROW 3 -->
+      <tr>
+        <td>3</td>
+        <td>Darshan</td>
+        <td>--</td>
+        <td>101</td>
+      </tr>
+    </table>
+  </body>
+</html>
