@@ -1,0 +1,42 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#selector-head {
+  color: red;
+}
+
+.list-item {
+  color: blue;
+}
+
+#second-el {
+  color: green;
+}
+
+ul {
+  list-style: ":";
+  background-color: black;
+  color: lime;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 28px;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.code * {
+  font-family: "Courier New", Courier, monospace;
+}
+
+input[type="number"] {
+  border: 1px solid red;
+}
+
+#magic li:nth-child(even) {
+  color: blue;
+}
+
+#magic li:nth-child(odd) {
+  color: red;
+}
