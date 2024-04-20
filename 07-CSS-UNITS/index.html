@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        font-size: 20px;
+      }
+      .one {
+        height: 100px;
+        width: 600px;
+        background-color: red;
+        border: 1px solid;
+      }
+      .two {
+        margin-top: 10px;
+        height: 100px;
+        width: 50%;
+        background-color: red;
+        border: 1px solid;
+      }
+      .parent {
+        margin-top: 10px;
+        border: 10px dashed blue;
+        height: 500px;
+        width: 400px;
+      }
+      .three {
+        margin-top: 10px;
+        height: 100px;
+        background-color: rebeccapurple;
+
+        width: 80vw;
+      }
+
+      .my-parent {
+        font-size: 22px;
+      }
+
+      .my-parent-child-1 {
+        font-size: 1em;
+      }
+
+      .my-parent-child-2 {
+        font-size: 3em;
+      }
+      .my-parent-child-3 {
+        font-size: 2rem;
+      }
+
+      .my-element {
+        height: 150px;
+        width: 150px;
+        background: red;
+      }
+
+      @media screen and (min-width: 500px) {
+        .my-element {
+          background: blue;
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        .my-element {
+          background: green;
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="my-element">Hey There</div>
+
+    <div class="my-parent">
+      <p class="my-parent-child-1">This is a paragraph</p>
+      <p class="my-parent-child-2">This is second paragraph</p>
+      <p class="my-parent-child-3">This is second paragraph</p>
+    </div>
+
+    <div class="one">Fixed</div>
+    <div class="two">50% Of parent (Screen)</div>
+    <p class="my-parent-child-3">This is second paragraph</p>
+    <div class="parent">
+      <div class="two">50% Of parent (Parent Div El)</div>
+      <div class="three">width: 50vw;</div>
+    </div>
+  </body>
+</html>
