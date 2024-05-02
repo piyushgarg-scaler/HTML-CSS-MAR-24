@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificity</title>
+    <style>
+      h1 {
+        color: red;
+      }
+      .head {
+        color: chocolate;
+      }
+      h1#my-ele {
+        color: darkorange;
+      }
+      h1.head {
+        color: green;
+      }
+      .head {
+        color: blue;
+      }
+      #my-ele {
+        color: gold;
+      }
+      .head {
+        color: blueviolet;
+      }
+      h1 {
+        color: chartreuse;
+      }
+
+      #my-ele {
+        color: blue !important;
+      }
+
+      #my-ele {
+        color: darkorange;
+        font-size: 20px;
+      }
+
+      #p {
+        color: green;
+      }
+      .p {
+        color: blue !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="head" id="my-ele" style="color: chocolate !important">
+      Hey There
+    </h1>
+    <h1 class="head" id="my-ele-2">Hey There 2</h1>
+    <p id="p" class="p">Para</p>
+  </body>
+</html>
